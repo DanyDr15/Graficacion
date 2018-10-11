@@ -25,7 +25,9 @@ ul{
 	padding-left: 10px
 	animation: cambiar 7s infinite;
 }
-ul, b{
+
+
+ul, p{
 	margin:0;
 }
 
