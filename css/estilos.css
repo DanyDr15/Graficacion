@@ -10,3 +10,7 @@ a {
 	font-size: 17px;
 	color:blue;
 }
+
+ul, b{
+	margin:0;
+}
