@@ -11,6 +11,10 @@ a {
 	color:blue;
 }
 
+ul{
+	list-style:none;
+	padding-left: 10px
+}
 ul, b{
 	margin:0;
 }
