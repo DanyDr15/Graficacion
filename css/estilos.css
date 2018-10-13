@@ -40,6 +40,11 @@ ul{
 	list-style: none;
 	padding-left: 10px;
 	animation: cambiar 7s infinite;
+	text-align: center;
+}
+
+div, p {
+	text-align: center;
 }
 
 ul, p {
