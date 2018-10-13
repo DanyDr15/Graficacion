@@ -11,31 +11,8 @@ a {
 	color:blue;
 }
 
-.contenedor{
-	display: flex;
-	width: 500px;
-	height: 40px;
-	color:#000000;
-	font-size: 40px;
-	line-height: 40px;
-
+.contenedor {
 	
 }
 
-ul{
-	list-style:none;
-	padding-left: 10px
-	-webkit-animation: cambiar 7s infinite;
-}
 
-
-ul, p{
-	margin:0;
-}
-
-@keyframes cambiar{
-	0%{margin-top: 0;}
-	20%{margin-top: 0;}
-
-	25%{margin-top: -40px;}
-}
