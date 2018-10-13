@@ -13,14 +13,19 @@ a {
 
 .contenedor {
 
-	
+	display: flex;
 	width: 300px;
 	height: 20px;
-	color: black;
+	color: blue;
 	font-size: 20px;
 	line-height: 20px;
 
-
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin:auto;
 	
 
 	overflow: hidden;
@@ -55,4 +60,3 @@ ul, p {
 
 }
 
-div, p      { text-align: center; }
