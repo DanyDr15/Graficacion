@@ -16,10 +16,10 @@ a {
 	display: flex;
 	font-style: Arial;
 	width: 300px;
-	height: 20px;
+	height: 40px;
 	color: black;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 40px;
+	line-height: 40px;
 
 	position: absolute;
 	top: 50;
@@ -47,14 +47,14 @@ ul, p {
 	0%{ margin-top: 0; }
 	20%{ margin-top: 0; }
 
-	25% {margin-top: -20px;}
-	50% {margin-top: -20px;}
+	25% {margin-top: -40px;}
+	50% {margin-top: -40px;}
 
-	55% {margin-top: -40px;}
-	80% {margin-top: -40px;}
+	55% {margin-top: -80px;}
+	80% {margin-top: -80px;}
 
-	85% {margin-top: -20px;}
-	95% {margin-top: -20px;}
+	85% {margin-top: -40px;}
+	95% {margin-top: -40px;}
 
 	100% {margin-top: 0;}
 
