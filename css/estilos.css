@@ -21,6 +21,7 @@ a {
 	font-size: 40px;
 	line-height: 40px;
 	font-weight: bold;
+	background: #ccc;
 
 	position: absolute;
 	top: 50;
