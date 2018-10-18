@@ -7,29 +7,29 @@
 <body>
 	<script type="text/javascript">
 
-		var x,c,x1;
-		x=prompt("Ingrese un numero impar");
-		c=x/2;
-		x1=c+1;
+		var n;
+		n=prompt("Ingrese un numero impar");
+		var c=n/2;
+		var n1=c+1;
 
-		if (x%2==0) {
+		if (n%2==0) {
 		document.write("Ingrese numero impar");
 	}
 		else{
 		
-			for (var i = 0; i < x; i++) {
-				for (var y = 0; y < x; y++) {
+			for (var x = 0; x < c; x++) {
+				for (var y = 0; y <=x; y++) {
 					document.write("*");
 				}
 					document.write("<br>");
 			}
 
 
-			for(var i=0;i<x1;i++){
-				for(var t=0;t<i;t++){
+			for(var x=0;x<n1;x++){
+				for(var t=0;t<x;t++){
 					document.write(" ");
 				}
-					for(var t1=x1-i-1;t1>=0;t1--){
+					for(var t1=n1-x-1;t1>=0;t1--){
 						document.write("*");
 					}
 					document.write("<br>");
