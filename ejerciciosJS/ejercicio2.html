@@ -9,12 +9,21 @@
 
 		var x;
 		x=prompt("Ingrese un numero impar");
+		if (x%2==0) {
 		for (var i = 0; i < x; i++) {
-			document.write("*");
+			for (var y = 0; y < i; y++) {
+				document.write("*");
+			}
+			
 		}
+	}
+	else{
+		document.write("Ingrese numero impar");
+	}
 		
 
 	</script>
+	}
 
 </body>
 </html>
