@@ -7,38 +7,40 @@
 <body>
 	<form action = "">
 		<input type ="text"  id="n2" />
-		<input type ="submit" value="Aceptar" onclick="" />
+		<input type ="submit" value="Aceptar" onclick="grafico" />
 			</form >
 	<script type="text/javascript">
 
-		var n = parseInt(document.getElementById('n2').value);
-		//n=prompt("Ingrese un numero impar");
+		var grafico = function{
 
-		var c=n/2;
-		var n1=c+1;
-		//var c1=Math.round(c);
-		//var c2 = c1-1;
-		
-		
-			for (var x=0; x<c; x++) {
-				for (var y = 0; y <=x; y++) {
-					document.write("*");
-				}
-					document.write("<br>");
-			}
+				var n = parseInt(document.getElementById('n2').value);
+				//n=prompt("Ingrese un numero impar");
 
-
-			for(var x=0;x<n1;x++){
-				for(var t=0;t<x;t++){
-					document.write("&nbsp&nbsp");
-				}
-					for(var t=n1-x-1;t>=0;t--){
-						document.write("*");
+				var c=n/2;
+				var n1=c+1;
+				//var c1=Math.round(c);
+				//var c2 = c1-1;
+				
+				
+					for (var x=0; x<c; x++) {
+						for (var y = 0; y <=x; y++) {
+							document.write("*");
+						}
+							document.write("<br>");
 					}
-					document.write("<br>");
-			}
+
+
+					for(var x=0;x<n1;x++){
+						for(var t=0;t<x;t++){
+							document.write("&nbsp&nbsp");
+						}
+							for(var t=n1-x-1;t>=0;t--){
+								document.write("*");
+							}
+							document.write("<br>");
+					}
 	
-		
+		}
 
 	</script>
 
