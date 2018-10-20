@@ -9,7 +9,7 @@
 	<br>
 	<form action = "">
 	
-		<b>Ingrese un numero:</b> <input type="text" id="n2" time="5s" onchange="grafico()">
+		<b>Ingrese un numero:</b> <input type="text" id="n2" time="5s" onchange="enviar()">
 		<br>
 		<br>
 		<textarea id="Area" style="width: 90%; height: 500px;"></textarea>
@@ -33,13 +33,13 @@
 				
 					for (var x=0; x<c2; x++) {
 						for (var y = 0; y <=x; y++) {
-							document.getElementById ("Area").value = ("*");
+							document.write("*");
 						}
-							/*document.getElementById ("Area").value =("<br>)";*/
+							document.write("<br>");
 					}
 
 
-				/*	for(var x=0;x<c1;x++){
+					for(var x=0;x<c1;x++){
 						for(var t=0;t<x;t++){
 							document.write("&nbsp&nbsp");
 						}
@@ -49,13 +49,14 @@
 							document.write("<br>");
 					}
 					}
-*/
+
 	
 		}
 
-		/*function enviar(){
-			document.getElementById ("Area").value = grafico();
-		}*/
+		function enviar(){
+			var gra=grafico();
+			document.getElementById("Area").innerHTML = grafico();
+		}
 
 	</script>
 
