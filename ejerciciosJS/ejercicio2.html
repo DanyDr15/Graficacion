@@ -15,13 +15,17 @@
 		function grafico(){
 
 				var n = parseInt(document.getElementById('n2').value);
+				if(n%==0){
+					alert("Ingrese un numero impar")
+				}
+				else{
 				var c=n/2;
 				var n1=c+1;
 				var c1=Math.round(c);
 				var c2 = c1-1;
 				
 				
-					for (var x=0; x<c; x++) {
+					for (var x=0; x<c2; x++) {
 						for (var y = 0; y <=x; y++) {
 							document.write("*");
 						}
@@ -37,6 +41,7 @@
 								document.write("*");
 							}
 							document.write("<br>");
+					}
 					}
 	
 		}
