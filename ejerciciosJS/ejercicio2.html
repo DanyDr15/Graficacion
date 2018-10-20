@@ -9,9 +9,10 @@
 	<br>
 	<form action = "">
 	
-		<b>Ingrese un numero:</b> <input type="text" id="n2" time="5s" onchange="grafico()">
+		<b>Ingrese un numero:</b> <input type="text" id="n2" time="5s" onchange="enviar()">
 		<br>
-		<textarea id="textToEncode" style="width: 90%; height: 500px;"></textarea>
+		<br>
+		<textarea id="Area" style="width: 90%; height: 500px;"></textarea>
 		</form >
 			
 	<script type="text/javascript">
@@ -48,7 +49,12 @@
 							document.write("<br>");
 					}
 					}
+
 	
+		}
+
+		function enviar(){
+			document.getElementById ("Area").value = "grafico();";
 		}
 
 	</script>
