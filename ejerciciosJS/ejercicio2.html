@@ -6,20 +6,21 @@
 </head>
 <body>
 	<form action = "">
-		<input type ="text"/>
-		</form >
+		<input type ="text"  id="n2" />
+		<input type ="submit" value="Aceptar" onclick="" />
+			</form >
 	<script type="text/javascript">
 
-		var n;
+		var n = parseInt(document.getElementById('n2').value);
 		//n=prompt("Ingrese un numero impar");
 
 		var c=n/2;
 		var n1=c+1;
-		var c1=Math.round(c);
-		var c2 = c1-1;
+		//var c1=Math.round(c);
+		//var c2 = c1-1;
 		
 		
-			for (var x=0; x<c2; x++) {
+			for (var x=0; x<c; x++) {
 				for (var y = 0; y <=x; y++) {
 					document.write("*");
 				}
@@ -40,5 +41,6 @@
 		
 
 	</script>
+
 </body>
 </html>
