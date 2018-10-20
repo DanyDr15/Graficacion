@@ -20,7 +20,6 @@
 				}
 				else{
 				var c=n/2;
-				var n1=c+1;
 				var c1=Math.round(c);
 				var c2 = c1-1;
 				
@@ -33,11 +32,11 @@
 					}
 
 
-					for(var x=0;x<n1;x++){
+					for(var x=0;x<c1;x++){
 						for(var t=0;t<x;t++){
-							document.write("&nbsp&nbsp");
+							document.write("&nbsp");
 						}
-							for(var t=n1-x-1;t>=0;t--){
+							for(var t=c1-x-1;t>=0;t--){
 								document.write("*");
 							}
 							document.write("<br>");
