@@ -5,6 +5,7 @@
 	<title>Ejercicio 2 de figuras</title>
 </head>
 <body>
+	<h1>EJECICIO DE LA FIGURA</h1>
 	<form action = "">
 		<input type ="text"  id="n2" />
 		<input type ="submit" value="Aceptar" onclick="grafico()" />
@@ -14,12 +15,10 @@
 		function grafico(){
 
 				var n = parseInt(document.getElementById('n2').value);
-				//n=prompt("Ingrese un numero impar");
-
 				var c=n/2;
 				var n1=c+1;
-				//var c1=Math.round(c);
-				//var c2 = c1-1;
+				var c1=Math.round(c);
+				var c2 = c1-1;
 				
 				
 					for (var x=0; x<c; x++) {
