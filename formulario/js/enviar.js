@@ -7,7 +7,7 @@ $(document).ready(function() {
 			url: $(this).attr("action"),
 			data: $(this).serialize(),
 			success: function(){
-				
+				$("#alerta".removeClass("hide").addClass("alert-success");
 			},
 			error : function(){
 				
