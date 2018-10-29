@@ -131,12 +131,12 @@
 
 </select>
 
-<div class="form-group field-contact-canton_id">
-<label class="control-label" for="contact-canton_id">Canton</label>
-<select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
+<div class="form-group field-contact-parroquia_id">
+<label class="control-label" for="contact-parroquia_id">Parroquia</label>
+<select id="contact-parroquia_id" class="form-control" name="Contact[parroquia_id]" onchange="
                     //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
-                    $.post( &quot;/site/cantones?id=&quot;+$(this).val(), function( data ) {
-                      $( &quot;select#contact-canton_id&quot; ).html( data );
+                    $.post( &quot;/site/parroquias?id=&quot;+$(this).val(), function( data ) {
+                      $( &quot;select#contact-parroquia_id&quot; ).html( data );
                       //jsRemoveWindowLoad();
                     });">
 
