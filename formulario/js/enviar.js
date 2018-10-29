@@ -7,10 +7,11 @@ $(document).ready(function() {
 			url: $(this).attr("action"),
 			data: $(this).serialize(),
 			success: function(){
-				$("#alerta".removeClass("hide").addClass("alert-success");
+				//$("#alerta".removeClass("hide").addClass("alert-success");
+			alert("enviado");
 			},
 			error : function(){
-				
+				alert("error");
 			}
 		});
 		return false;

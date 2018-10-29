@@ -32,8 +32,9 @@ if (isset($_POST["nombre"]) && !empty($_POST["nombre"])&&
 	$contenido = "\nMensaje: " . $mensaje ;
 	mail($destinoMail, "Mensaje de Contacto" . $nombre, $contenido);
 
-	return print(json_decode('ok'));
-
+	//return print(json_decode('ok'));
+	return print("ok");
 }
 
-return print(json_decode('no enviado'));
+//return print(json_decode('no enviado'));
+return print("no enviado");
