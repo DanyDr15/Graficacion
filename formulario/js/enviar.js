@@ -7,12 +7,13 @@ $(document).ready(function() {
 			url: $(this).attr("action"),
 			data: $(this).serialize(),
 			success: function(){
-				alert("enviado");
+				
 			},
 			error : function(){
-				alert("error");
+				
 			}
 		});
 		return false;
 	});
 });
+
