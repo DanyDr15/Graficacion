@@ -1,3 +1,8 @@
 $(document).ready(function() {
-	alert("hol mundo")
+	
+	$(".formulario-contacto").bind("submit" , function(){
+
+
+		return false;
+	});
 });
