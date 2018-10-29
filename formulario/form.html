@@ -131,10 +131,44 @@
 
 </select>
 
-              <div class="form-group">
-                <label for="">Parroquia</label>
-                <input type="text" class="form-control" id="" placeholder="Parroquia">
-              </div>
+<div class="form-group field-contact-canton_id">
+<label class="control-label" for="contact-canton_id">Canton</label>
+<select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
+                    //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
+                    $.post( &quot;/site/cantones?id=&quot;+$(this).val(), function( data ) {
+                      $( &quot;select#contact-canton_id&quot; ).html( data );
+                      //jsRemoveWindowLoad();
+                    });">
+
+
+                  <option value="">Seleccione Parroquia</option>
+                  <option value="1" >BARTOLOMÉ RUIZ (CÉSAR FRANCO CARRIÓN)</option>
+                  <option value="2" >  5 DE AGOSTO</option>
+                  <option value="3" > ESMERALDAS</option>
+                  <option value="4" >LUIS TELLO (LAS PALMAS)</option>
+                  <option value="5" >SIMÓN PLATA TORRES</option>
+                  <option value="6" > ESMERALDAS</option>
+                  <option value="7" >ATACAMES</option>
+                  <option value="8" > CAMARONES (CAB. EN SAN VICENTE)</option>
+                  <option value="9" > CRNEL. CARLOS CONCHA TORRES (CAB.EN HUELE)</option>
+                  <option value="10" > CHINCA</option>
+                  <option value="11" > CHONTADURO</option>
+                  <option value="12" >CHUMUNDÉ</option>
+                  <option value="13" >LAGARTO</option>
+                  <option value="14" > LA UNIÓN</option>
+                  <option value="15" > MAJUA</option>
+                  <option value="16" > MONTALVO (CAB. EN HORQUETA)</option>
+                  <option value="17" >RÍO VERDE</option>
+                  <option value="18" > ROCAFUERTE</option>
+                  <option value="19" >SAN MATEO</option>
+                  <option value="20" > SÚA (CAB. EN LA BOCANA)</option>
+                  <option value="21" > TABIAZO</option>
+                  <option value="22" > TACHINA</option>
+                  <option value="23" >TONCHIGÜE</option>
+                  <option value="24" >VUELTA LARGA</option>
+
+
+</select>
 
               <div class="form-group">
                 <label for="">Mensaje</label>
