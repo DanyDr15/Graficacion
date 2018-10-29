@@ -8,6 +8,8 @@ $(document).ready(function() {
 			data: $(this).serialize(),
 			success: function(){
 				$("#alerta").removeClass("hide").addClass("alert-success");
+				$(".respuesta").html()
+
 			//alert("enviado");
 			},
 			error : function(){
