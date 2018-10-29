@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de Contacto</title>
+</head>
+
+<body>
+<style>
+body{ font-family:"Comic Sans MS", cursive;}
+form {
+    margin:0 auto;
+    width:80%;
+}
+ 
+input, textarea {
+    width:100%;
+    height:27px;
+	background-color:transparent;
+    border:2px solid #CCC;
+    padding:10px;
+    margin-top:5px;
+    font-size:15px;
+    color:#999;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:205px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+	background-color:#9D0000;
+	color:#FFF;
+}
+h2{ text-align:center;
+color:#999;
+}
+</style>
+
+<h2>Formulario de Contacto</h2>
+
+<form action="envio.php" method="POST">
+
+<input name="name" id="name" type="text" required="required" placeholder="Nombres" />
+
+<input name="email" id="email" type="email" required="required" placeholder="E-mail"/>
+
+<input name="telefono" id="telefono" type="text" required="required" placeholder="Telefono" />
+
+<textarea name="comentario" id="comentario" required="required" placeholder="Comentarios"></textarea>
+
+<input name="submit" type="submit" id="submit" value="Enviar Mensaje" />
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
