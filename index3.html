@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>BLOG DANY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+
+
+
+
+  <header class="w3-container w3-center w3-padding-32"> 
+    <!--<div class="contenedor">
+    <br> 
+    <p>BLOG</p>
+    <ul>
+      <li>graficacion</li>
+      <li>animacion</li>
+      <li>;)</li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>-->
+  
+  <h1><b>BLOG DE GRAFICACION Y ANIMACION</b></h1>
+
+  <p id="demo1">Bienvenidos a mi blog </p>
+ 
+ <button type="boton_personalizado" onclick="document.getElementById('demo1').innerHTML = 'Hola a todos ;)'">Click aqui!</button>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/docker1.jpg" alt="Nature" style="width:80%">
+    <div class="w3-container">
+      <h3><b>DOCKER</b></h3>
+      <h5>Octubre 03, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p ALIGN="justify">La idea detrás de Docker es crear contenedores ligeros y portables para las aplicaciones software que puedan 
+        ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina
+        tenga por debajo, facilitando así también los despliegues.
+        
+        Docker, me permite meter en un contenedor (“una caja”, algo auto contenido, cerrado) todas aquellas cosas que mi
+        aplicación necesita para ser ejecutada (java, Maven, tomcat…) y la propia aplicación. Así yo me puedo llevar ese
+        contenedor a cualquier máquina que tenga instalado Docker y ejecutar la aplicación sin tener que hacer nada más.
+        Para encontrar los pasos a seguir pueden entrar al siguiente enlace
+            
+      </p>
+     <p> <a target="_blank" href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#uninstall-old-versions" class="blue">  -> click aqui <-  </a> </p>   
+      
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Leer mas »</b></button></p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/digitalocean.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>INSTALACION DEL SERVIDOR</b></h3>
+      <h5><span class="w3-opacity">Octubre 3, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p ALIGN="justify">Para empezar necesitamos crear una cuenta en Digital Ocean, es la pagina donde compraremos nuestro servidor. Existen varios precios dependiendo en que lo vamos a usar, como el de nosotros es para la universidad contratar el que cuesta 5$ es suficiente.
+
+      Luego empezamos a crear droplet que vendria siendo nuestro sistema y nuestro servidor.
+      En el por medio de la consola instalaremos docker como hemos visto anteriormente y continuamos instalando el servidor apache
+      con el siguiente comando " docker run -p 80:80 --name web -d -v /htdocs: /usr/local/apache2/htdocs httpd" y listo 
+      ya podemos ir poniendo todo lo que queramos hacer en la carpeta htdocs.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Leer mas »</b></button></p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/dany.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Mi nombre es DANY PIANCHICHE</b></h4>
+      <p>Estoy cursando el sexto semestre de la carrera de Ing. en Sistemas</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Blogs nuevos de graficacion</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+
+       <li class="w3-padding-16">
+        <a href="/formulario/form.html"><img src="/w3images/formulario.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px"></a>
+        <a href="/formulario/form.html"><span class="w3-large">FORMULARIO DE CONTACTO</span><br></a>
+        <span></span>
+      </li>
+      
+      <li class="w3-padding-16">
+        <a href="/index2.html"><img src="/w3images/js.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px"></a>
+         <a href="/index2.html"><span class="w3-large">Calificacion de HTML,CSS,JS</span><br></a>
+        <span></span>
+      </li>
+       <li class="w3-padding-16">
+        <a href="/grafico.html"><img src="/w3images/ejercicio2.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px"></a>
+        <a href="/grafico.html"><span class="w3-large">GRAFICO CON JAVA SCRIPT</span><br></a>
+        <span></span>
+      </li>
+
+     
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">sin contenido</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">aun</span> 
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Anterior</button>
+  <a href="/index2.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Siguiente »</button></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128264399-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128264399-1');
+</script>
+
+
+</body>
+</html>
