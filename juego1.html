@@ -11,9 +11,6 @@ canvas {
 </head>
 <body onload="startGame()">
 
-<div id="myfilter" style="position:absolute;background-color:#000000;opacity:0.3;width:484px;height:272px;display:none"></div>
-<div id="myrestartbutton" style="position:absolute;padding-top:150px;padding-left:240px;display:none;"><button onclick="restartGame()">Restart</button></div>
-<div id="canvascontainer"></div>
 <br>
 <script>
 
@@ -203,13 +200,8 @@ function clearmove() {
     myGamePiece.speedY = 0; 
 }
 </script>
-<div style="text-align:center;width:480px;">
-  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
-  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
-  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
-</div>
 
-<p>The score will count one point for each frame you manage to "stay alive".</p>
+
+<p>Haga click en el juego para empezar a manejar el juego con el teclado!.</p>
 </body>
 </html>
