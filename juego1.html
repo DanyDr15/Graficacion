@@ -10,8 +10,6 @@ canvas {
 </style>
 </head>
 <body onload="startGame()">
-
-<br>
 <script>
 
 var myGamePiece;
@@ -19,7 +17,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
@@ -50,6 +48,10 @@ var myGameArea = {
 
 function component(width, height, color, x, y, type) {
     this.type = type;
+     if (type == "image") {
+    this.image = new Image();
+    this.image.src = color;
+  }
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -58,13 +60,21 @@ function component(width, height, color, x, y, type) {
     this.y = y;    
     this.update = function() {
         ctx = myGameArea.context;
+        
         if (this.type == "text") {
             ctx.font = this.width + " " + this.height;
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
         } else {
+             if (type == "image") {
+      ctx.drawImage(this.image, 
+        this.x, 
+        this.y,
+        this.width, this.height);
+    } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
         }
     }
     this.newPos = function() {
@@ -120,28 +130,28 @@ function updateGameArea() {
    
      var t = 1;
     if(myGameArea.frameNo >=500 && myGameArea.frameNo <=999 ){
-    	t = 2;
-    	}
+        t = 2;
+        }
     else{
-    	if(myGameArea.frameNo >=1000 && myGameArea.frameNo <=1499){
+        if(myGameArea.frameNo >=1000 && myGameArea.frameNo <=1499){
         t=3;
         }
         else{
-        	if(myGameArea.frameNo >=1500 && myGameArea.frameNo <=1999){
-        		t=4;
-        	}
+            if(myGameArea.frameNo >=1500 && myGameArea.frameNo <=1999){
+                t=4;
+            }
             else{
-				if(myGameArea.frameNo >=2000 && myGameArea.frameNo <=2499){
-        		t=5;
-        		}
+                if(myGameArea.frameNo >=2000 && myGameArea.frameNo <=2499){
+                t=5;
+                }
                 else{
-                	if(myGameArea.frameNo >=2500 && myGameArea.frameNo <=2999){
-        				t=6;
-        			}
+                    if(myGameArea.frameNo >=2500 && myGameArea.frameNo <=2999){
+                        t=6;
+                    }
                     else{
-                    	if(myGameArea.frameNo >=3000){
-        				t=7;
-        				}
+                        if(myGameArea.frameNo >=3000){
+                        t=7;
+                        }
                     }
                 }
             }
@@ -202,6 +212,6 @@ function clearmove() {
 </script>
 
 
-<p>Haga click en el juego para empezar a manejar el juego con el teclado.</p>
+<p>Haga click en el juego para empezar a manejarlo con el teclado.</p>
 </body>
 </html>
