@@ -17,7 +17,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
+    myGamePiece = new component(30, 30, "img/pelota.jpg", 10, 120, "image");
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
@@ -210,8 +210,13 @@ function clearmove() {
     myGamePiece.speedY = 0; 
 }
 </script>
+<div style="text-align:center;width:480px;">
+  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+</div>
 
-
-<p>Haga click en el juego para empezar a manejarlo con el teclado.</p>
+<p>The score will count one point for each frame you manage to "stay alive".</p>
 </body>
 </html>
