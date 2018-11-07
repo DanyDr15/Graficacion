@@ -19,7 +19,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-   myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
+    myGamePiece = new component(30, 30, "smiley.gif", 10, 120, "image");
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
@@ -50,7 +50,7 @@ var myGameArea = {
 
 function component(width, height, color, x, y, type) {
     this.type = type;
-     if (type == "image") {
+    if (type == "image") {
     this.image = new Image();
     this.image.src = color;
   }
@@ -67,10 +67,10 @@ function component(width, height, color, x, y, type) {
         this.x, 
         this.y,
         this.width, this.height);
-    } else {
-      ctx.fillStyle = color;
-      ctx.fillRect(this.x, this.y, this.width, this.height);
-    }
+    }  else {
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
     }
     this.newPos = function() {
         this.x += this.speedX;
@@ -207,6 +207,6 @@ function clearmove() {
 </script>
 
 
-<p>Haga click en el juego para empezar a manejar el juego con el teclado!.</p>
+<p>Haga click en el juego para empezar a manejar el juego con el teclado</p>
 </body>
 </html>
