@@ -128,17 +128,6 @@ function updateGameArea() {
    
     for (i = 0; i < myObstacles.length; i += 1) {
    
-        myObstacles[i].speedX = -1;
-        myObstacles[i].newPos();
-        myObstacles[i].update();
-  
-    
-    }
-    
-    
-   for (i = 0; i < myObstacles.length; i += 1) {
-   
-
      var t = 1;
     if(myGameArea.frameNo >=500 && myGameArea.frameNo <=999 ){
         t = 2;
@@ -174,11 +163,21 @@ function updateGameArea() {
     if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -t; }
     if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = t; }
   
-        myObstacles[i].x += -t;
+        myObstacles[i].speedX = -t;
+        myObstacles[i].newPos();
         myObstacles[i].update();
+  
+    
+    }
+    
+    
+   // for (i = 0; i < myObstacles.length; i += 1) {
+   
+     //   myObstacles[i].x += -3;
+       // myObstacles[i].update();
         
        
-    }
+    //}
     myScore.text="SCORE: " + myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();    
