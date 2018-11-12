@@ -2,15 +2,70 @@
 <html>
   <head>
   	
-  	<link rel="stylesheet" type="text/css" href="css/juegoCraf.css">
+  
+<style type="text/css">
+	* {
+  margin: 0;
+  padding: 0;
+}
 
-  	<link href="js/juegoCraf.js" >
+body {
+  font-family: 'Lato';
+  margin: 20px auto;
+  width: 600px;
+  text-align: center;
+}
 
+h2 {
+  margin: 20px 0;
+}
+
+#crafty-game {
+  background: #efefef;
+}
+</style>
   </head>
   <body>
-    <div id="game"></div>
-    <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+  	<script type="text/javascript">
+  		Crafty.init(600, 400, document.getElementById('crafty-game'));
+
+var blackBox = Crafty.e("2D, Canvas, Color, Tween")
+  .attr({
+    x: 100,
+    y: 100,
+    w: 50,
+    h: 50
+  })
+  .color("black");
+
+var orangeBox = Crafty.e("2D, Canvas, Color, Tween")
+  .attr({
+    x: 275,
+    y: 175,
+    w: 50,
+    h: 50
+  })
+  .color("orange")
+  .origin("center");
+
+var purpleBox = Crafty.e("2D, Canvas, Color, Tween")
+  .attr({
+    x: 400,
+    y: 250,
+    w: 50,
+    h: 50
+  })
+  .color("purple")
+  .origin("middle right");
+
+blackBox.tween({rotation: 720}, 3000);
+
+orangeBox.tween({rotation: 360}, 3000);
+
+purpleBox.tween({rotation: 360}, 3000);
+  	</script>
+  	
     <h2>Tween Component in Crafty</h2>
-<div id="crafty-game"></div>
+	<div id="crafty-game"></div>
   </body>
 </html>
