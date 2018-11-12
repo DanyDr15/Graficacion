@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	
-  	<script src="js/crafty.js"></script>
-  
-<style type="text/css">
-	* {
-  margin: 0;
-  padding: 0;
-}
+	<head>
+    <script src="js/crafty.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/style2.css">
+ <div id="crafty-game"></div>
+	</head>
+    <body>
 
-body {
-  font-family: 'Lato';
-  margin: 20px auto;
-  width: 600px;
-  text-align: center;
-}
+	 <script>
+		 //alias
+     var stageWidth = 600;
+var stageHeight = 400;
+var gameScore = 0;
 
-h2 {
-  margin: 20px 0;
-}
+Crafty.init(600, 400, document.getElementById('crafty-game'));
 
-#crafty-game {
-  background: #efefef;
-}
-</style>
-  </head>
-  <body>
-  	<script type="text/javascript">
-  		Crafty.init(600, 400, document.getElementById('crafty-game'));
-
-var blackBox = Crafty.e("2D, Canvas, Color, Tween")
+var foodBox = Crafty.e("2D, Canvas, Color, Food")
   .attr({
-    x: 100,
-    y: 100,
-    w: 50,
-    h: 50
-  })
-  .color("black");
-
-var orangeBox = Crafty.e("2D, Canvas, Color, Tween")
-  .attr({
-    x: 275,
-    y: 175,
-    w: 50,
-    h: 50
-  })
-  .color("orange")
-  .origin("center");
-
-var purpleBox = Crafty.e("2D, Canvas, Color, Tween")
-  .attr({
-    x: 400,
+    x: 150,
     y: 250,
+    w: 15,
+    h: 15
+  })
+  .color("red")
+  .origin("center")
+  .bind("EnterFrame", function(eventData) {
+    this.rotation += 4;
+  });
+
+var playerBox = Crafty.e("2D, Canvas, Color, Fourway, Collision")
+  .attr({
+    x: 50,
+    y: 360,
     w: 50,
     h: 50
   })
-  .color("purple")
-  .origin("middle right");
+  .color("black")
+  .fourway(200)
+  .bind("EnterFrame", function(eventData) {
+    if(this.x < 0) {
+      this.x = 0;
+    }
+    if(this.y < 0) {
+      this.y = 0;
+    }
+    if(this.x > (stageWidth - this.w)) {
+      this.x = stageWidth - this.w;
+    }
+    if(this.y > (stageHeight - this.h)) {
+      this.y = stageHeight - this.h;
+    }
+  });
 
-blackBox.tween({rotation: 720}, 3000);
+var scoreText = Crafty.e('2D, DOM, Text')
+  .attr({
+    x: 10,
+    y: 10
+  })
+  .textFont({
+    size: '25px'
+  });
 
-orangeBox.tween({rotation: 360}, 3000);
+scoreText.text(gameScore.toString());
 
-purpleBox.tween({rotation: 360}, 3000);
-  	</script>
-
-    <h2>Tween Component in Crafty</h2>
-	<div id="crafty-game"></div>
-  </body>
+playerBox.checkHits("Food").bind("HitOn", function(hitData) {
+  foodBox.x = Math.random() * (stageWidth - foodBox.w);
+  foodBox.y = Math.random() * (stageHeight - foodBox.h);
+  gameScore += 1;
+  scoreText.text(gameScore.toString());
+});
+    document.write("<br>");
+    document.write("<br>");
+	</script>
+	</body>
 </html>
