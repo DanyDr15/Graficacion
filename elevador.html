@@ -72,20 +72,20 @@
           <div class="col-lg-10 mx-auto">
             <h2>Este codigo funciona para los niveles 1 - 3 </h2>
             <code>
-              {
-                init: function(elevators, floors) {
-                  var elevator = elevators[0]; // Let's use the first elevator
+              {<br>
+                init: function(elevators, floors) { <br>
+                  var elevator = elevators[0]; // Let's use the first elevator<br>
 
-                  // Whenever the elevator is idle (has no more queued destinations) ...
-                elevator.on("idle", function() {
-            // let's go to all the floors (or did we forget one?)
-            for(i=0; i<=4; i++)
-                elevator.goToFloor(i);
-        });
-    },
-    update: function(dt, elevators, floors) {
-        // We normally don't need to do anything here
-    }
+                  // Whenever the elevator is idle (has no more queued destinations) ...<br>
+                elevator.on("idle", function() {<br>
+            // let's go to all the floors (or did we forget one?)<br>
+            for(i=0; i<=4; i++)<br>
+                elevator.goToFloor(i);<br>
+        });<br>
+    },<br>
+    update: function(dt, elevators, floors) {<br>
+        // We normally don't need to do anything here<br>
+    }<br>
 }</code>
 
           <h2>Este codigo funciona para los niveles 4 - 12 pero se debe tener en cuenta que en algunos niveles se debe intentarlo varias veces</h2>
