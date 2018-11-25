@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
   <head>
 
     <meta charset="utf-8">
+    <script src="//cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
+    <script src="js/phaser.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Blog de Graficacion y Animacion - Start Bootstrap Template</title>
-    <link rel="stylesheet" type="text/css" href="css/juegoCraf.css">
+
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -58,106 +59,30 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1">HERRAMIENTAS DE JUEGO</h1>
+        <h1 class="mb-1">JUEGO CON PHASER.IO</h1>
         <h3 class="mb-5">
-          <em>Crafty, Melow, Pixi</em>
+          <em>Pagina de Dany Pianchiche</em>
         </h3>
-        
+
       </div>
       <div class="overlay"></div>
     </header>
 
-    <!-- About -->
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>JUEGO HECHO CON CRAFTY.JS</h2>
-            <br>
-          </div>
-                <!DOCTYPE html>
-<html>
-	<head>
-    <script src="js/crafty.js"></script>
- <link rel="stylesheet" type="text/css" href="css/juegoCraf.css">
- <div id="crafty-game"></div>
-	</head>
-    <body>
+        <h3 class="text-secondary mb-0">JUEGO PHASER.JS</h3>
+          <h2 class="mb-5">Muevase con las direccionales del teclado</h2>
 
-	 <script>
-		 //alias
-     var stageWidth = 600;
-var stageHeight = 400;
-var gameScore = 0;
-
-Crafty.init(600, 400, document.getElementById('crafty-game'));
-
-var foodBox = Crafty.e("2D, Canvas, Color, Food")
-  .attr({
-    x: 150,
-    y: 250,
-    w: 15,
-    h: 15
-  })
-  .color("red")
-  .origin("center")
-  .bind("EnterFrame", function(eventData) {
-    this.rotation += 4;
-  });
-
-var playerBox = Crafty.e("2D, Canvas, Color, Fourway, Collision")
-  .attr({
-    x: 50,
-    y: 360,
-    w: 50,
-    h: 50
-  })
-  .color("black")
-  .fourway(200)
-  .bind("EnterFrame", function(eventData) {
-    if(this.x < 0) {
-      this.x = 0;
-    }
-    if(this.y < 0) {
-      this.y = 0;
-    }
-    if(this.x > (stageWidth - this.w)) {
-      this.x = stageWidth - this.w;
-    }
-    if(this.y > (stageHeight - this.h)) {
-      this.y = stageHeight - this.h;
-    }
-  });
-
-var scoreText = Crafty.e('2D, DOM, Text')
-  .attr({
-    x: 10,
-    y: 10
-  })
-  .textFont({
-    size: '25px'
-  });
-
-scoreText.text(gameScore.toString());
-
-playerBox.checkHits("Food").bind("HitOn", function(hitData) {
-  foodBox.x = Math.random() * (stageWidth - foodBox.w);
-  foodBox.y = Math.random() * (stageHeight - foodBox.h);
-  gameScore += 1;
-  scoreText.text(gameScore.toString());
-});
-    document.write("<br>");
-    document.write("<br>");
-	</script>
-	</body>
-</html>
+            <iframe allowtransparency="true" style="background-color: Snow;" src="crafty.html" height="605px" width="805px"></iframe>
+          
           
         </div>
       </div>
     </section>
 
-   
+    <!-- About -->
     
+  
 
     <!-- Call to Action 
     <section class="content-section bg-primary text-white">
@@ -219,7 +144,3 @@ playerBox.checkHits("Food").bind("HitOn", function(hitData) {
   </body>
 
 </html>
-
-
-
-
