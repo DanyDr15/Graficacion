@@ -24,8 +24,8 @@
   "scripts": {
     "test": "npm run eslint && NODE_ENV= npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
-    "dev": "nodemon src/",
     "start": "node src/",
+    "dev": "nodemon src/",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {
