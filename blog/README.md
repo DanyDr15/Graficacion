@@ -5,7 +5,7 @@
 * [x] Add local auth to server
 * [x] Add vuetify to client
 * [x] Add feathers-vuex to client
-* [x] Add login to client 
+* [x] Add login to client
 * [x] Add boards service to server
 * [x] User can create/list/view boards on client
   * [x] Create
@@ -29,7 +29,7 @@
     * [ ] Restrict to board owner
 * [x] User can move cards from one list to another
 * [ ] Restrict editing/creating lists/cards to board owner
-  * [ ] Update to work for no boardId in query 
+  * [ ] Update to work for no boardId in query
 * [x] Create activities service on server
 * [x] All activities are logged
 * [ ] User can edit title of card
