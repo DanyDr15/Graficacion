@@ -1,20 +1,20 @@
 # Trello Clone
 
-* [x] Generate Server
-* [x] Generate Client
-* [x] Add local auth to server
-* [x] Add vuetify to client
-* [x] Add feathers-vuex to client
-* [x] Add login to client
-* [x] Add boards service to server
-* [x] User can create/list/view boards on client
+* [] Generate Server
+* [] Generate Client
+* [] Add local auth to server
+* [] Add vuetify to client
+* [] Add feathers-vuex to client
+* [] Add login to client
+* [] Add boards service to server
+* [] User can create/list/view boards on client
   * [x] Create
     * [x] Add ownerId
   * [x] List
     * [x] Restrict to owner
   * [x] View
     * [x] Restrict to owner
-* [x] Add lists service to server
+* [] Add lists service to server
 * [x] User can create/list/view lists for boards on client
   * [x] Create
     * [ ] Restrict to board owner
