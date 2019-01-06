@@ -46,11 +46,11 @@
             aria-describedby="confirmPasswordHelp"
             placeholder="Password" required>
           <h5 id="confirmPasswordHelp" class="form-text text-muted">
-          Please confirm your password.
+          Por favor, confirme su contraseña.
           </h5>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Signup</button>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
     </form>
   </section>
 </template>
