@@ -55,7 +55,7 @@ import MarkdownIt from 'markdown-it';
 import MDemoji from 'markdown-it-emoji';
 const md = new MarkdownIt();
 md.use(MDemoji);
-const API_URL = 'http://localhost:4000/';
+const API_URL = 'http://localhost:2000/';
 export default {
   data: () => ({
     showForm: false,
