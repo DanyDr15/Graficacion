@@ -1,7 +1,7 @@
 <template>
   <div class="home text-center">
     <div class="jumbotron">
-      <h1 class="display-3">Authentication for Newbs</h1>
+      <h1 class="display-3">Bienvenidos al cms creado por Dany Pianchiche</h1>
       <p class="lead">
         Learning Auth is fun! 🔐 🎉
       </p>
