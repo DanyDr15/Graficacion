@@ -13,7 +13,7 @@
         <router-link
           class="btn btn-primary btn-lg"
           :to="{ name: 'signup' }"
-          role="button">Sign Up</router-link>
+          role="button">Registrarse</router-link>
       </p>
     </div>
   </div>
