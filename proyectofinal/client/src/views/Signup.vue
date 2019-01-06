@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Signup</h1>
+    <h1>Registrarse</h1>
     <div v-if="signingUp">
       <img src="../assets/pacman_loading.svg" />
     </div>
