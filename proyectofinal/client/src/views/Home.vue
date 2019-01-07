@@ -3,12 +3,10 @@
     <div class="jumbotron">
       <h1 class="display-3">Bienvenidos al cms creado por Dany Pianchiche</h1>
       <p class="lead">
-        Learning Auth is fun! 🔐 🎉
+       🔐 🎉
       </p>
       <hr class="my-4">
-      <p>
-        CJ and Tony are a great team (most days...)
-      </p>
+      
       <p class="lead">
         <router-link
           class="btn btn-primary btn-lg"
